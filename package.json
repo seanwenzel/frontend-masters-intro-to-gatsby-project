@@ -12,11 +12,14 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "format": "prettier --ignore-path .gitignore --write ."
   },
   "dependencies": {
     "gatsby": "^3.11.1",
+    "gatsby-plugin-react-helmet": "^4.14.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
   }
 }
