@@ -1,0 +1,27 @@
+.header {
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header a {
+  color: inherit;
+  display: inline-block; /* make inline-block to apply padding around it */
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.header a:focus,
+.header a:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+/* We want to give some space around the content. This will go on <main> */
+.content {
+  margin: 3rem auto; /* Using auto will center the content */
+  max-width: 54ch; /* Nice little trick to use character units here. Line-length
+                      has a bigger impact on the user than the actual width. */
+}
